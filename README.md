@@ -11,3 +11,9 @@ TIL (Today I Learned)
 
 * [백준](https://github.com/zihasoo/TIL/tree/main/%EB%B0%B1%EC%A4%80)
   * [13925 수열과 쿼리 13 문제풀이](https://github.com/zihasoo/TIL/blob/main/%EB%B0%B1%EC%A4%80/%EB%B0%B1%EC%A4%80%2013925%20-%20%EC%88%98%EC%97%B4%EA%B3%BC%20%EC%BF%BC%EB%A6%AC%2013%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
+
+* [Web](https://github.com/zihasoo/TIL/tree/main/Web)
+  * [Web 메모](https://github.com/zihasoo/TIL/blob/main/Web/Web%20%EB%A9%94%EB%AA%A8.md)
+  
+* [Flutter](https://github.com/zihasoo/TIL/tree/main/Flutter)
+  * [Flutter 메모](https://github.com/zihasoo/TIL/blob/main/Flutter/Flutter%20%EB%A9%94%EB%AA%A8.md)
