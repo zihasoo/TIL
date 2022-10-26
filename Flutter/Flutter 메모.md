@@ -16,11 +16,13 @@ MediaQuery.of(context).orientation
 MediaQuery.of(context).viewInsets.bottom
 ```
 
-* dart 2.2.2 부터 리스트 내포형 if 사용가능. 중괄호 사용 안함
+* dart 2.2.2 부터 리스트 내포형 if 사용가능. 중괄호 사용 못함
 
 ```dart
 children[
     if (isLandscape) Row(...)
+    if (isLandscape) ...[OutlinedButton(), OutlinedButton()] 
+    //여러개 하고싶으면 이런식으로 하면 될듯?
 ]
 ```
 
@@ -56,3 +58,21 @@ void main() {
   print(Platform.isWindows);
 }
 ```
+
+* 제스처 디텍팅 하는 방법 
+```dart
+InkWell //누르면 기본 버튼 누른 효과 나옴 (잉크 퍼지는 효과)
+GestureDetector //좀 더 섬세한 컨트롤 가능. 효과 x
+```
+
+* 보이지 않는 자식을 가진 GestureDetector의 터치 이벤트 활성화 하는 법
+```dart
+onTap: () {},
+behavior: HitTestBehavior.opaque, //이걸 사용하면 된다
+```
+
+
+* primarySwatch에 들어갈 MaterialColor 만드는 방법   
+https://points.tistory.com/65
+
+*
