@@ -14,8 +14,11 @@ freenom은 발급을 받아도 해당 도메인으로 접속이 안돼서 포기
 //letsencrypt 인증서 발급 라우터
 @GetMapping("/.well-known/acme-challenge/{fileName}")
 public String auth(@PathVariable String fileName) throws IOException {
-    var file = new File("<서버 프로젝트 경로>\\.well-known\\acme-challenge\\"+fileName);
-    return new Scanner(file).nextLine();
+    var file = new File("D:\\Codes\\Java\\Java Execute Server\\.well-known\\acme-challenge\\"+fileName);
+    var sc = new Scanner(file);
+    var ret = sc.nextLine();
+    sc.close();
+    return ret;
 }
 ```
 
