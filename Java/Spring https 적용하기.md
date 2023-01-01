@@ -14,8 +14,11 @@ freenom은 발급을 받아도 해당 도메인으로 접속이 안돼서 포기
 //letsencrypt 인증서 발급 라우터
 @GetMapping("/.well-known/acme-challenge/{fileName}")
 public String auth(@PathVariable String fileName) throws IOException {
-    var file = new File("<서버 프로젝트 경로>\\.well-known\\acme-challenge\\"+fileName);
-    return new Scanner(file).nextLine();
+    var file = new File("D:\\Codes\\Java\\Java Execute Server\\.well-known\\acme-challenge\\"+fileName);
+    var sc = new Scanner(file);
+    var ret = sc.nextLine();
+    sc.close();
+    return ret;
 }
 ```
 
@@ -30,10 +33,10 @@ pem파일을 그냥 적용해도 될 것 같은데 되는지 확인을 안해봐
 
 변환을 위해서는 openssl을 이용해야 한다. 윈도우에 설치할 수 있는거 아무거나 찾아서 설치하고, cmd를 실행해서 openssl.exe가 있는 폴더로 이동한다. 이후 아래 커맨드를 실행하면 된다.
 
-> openssl pkcs12 -export -out <원하는 파일명>.p12 -in <어쩌구-crt.pem> -inkey <어쩌구-key.pem> -passout pass: <원하는 비밀번호>
+> openssl pkcs12 -export -out <원하는 파일명>.p12 -in <어쩌구-crt.pem> -inkey <어쩌구-key.pem> -passout pass:<원하는 비밀번호>
 
-<어쩌구-crt.pem> 파일과 <어쩌구-key.pem> 파일은 아까 인증 프로그램으로부터 받은 파일 4개 중 chain을 제외한 2개에서 각각 crt로 끝나는 것과 key로 끝나는 파일 이름을 넣으면 된다.    
-비밀번호는 spring에 적용할 때 필요하니 아무거나 쓰면 안된다.    
+<어쩌구-crt.pem> 파일과 <어쩌구-key.pem> 파일은 아까 인증 프로그램으로부터 받은 파일 4개 중 chain을 제외한 2개에서 각각 crt로 끝나는 것과 key로 끝나는 파일 이름을 넣으면 된다. 이 파일들도 현재 openssl을 실행하는 폴더 안에 복붙을 해줘야된다.    
+비밀번호는 spring에 적용할 때 필요하니 아무거나 쓰면 안된다. 그리고 pass:이거랑 비밀번호를 띄워쓰기 없이 붙여서 써야 한다.    
 
 그렇게 해서 .p12파일을 얻었다면 모든게 준비됐다.
 
