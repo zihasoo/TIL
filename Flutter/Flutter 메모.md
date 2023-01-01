@@ -16,7 +16,7 @@ MediaQuery.of(context).orientation
 MediaQuery.of(context).viewInsets.bottom
 ```
 
-* dart 2.2.2 부터 리스트 내포형 if 사용가능. 중괄호 사용 못함
+* dart 2.2.2 부터 리스트 내포형 if 사용가능. (중괄호 사용 못함)
 
 ```dart
 children[
@@ -75,4 +75,3 @@ behavior: HitTestBehavior.opaque, //이걸 사용하면 된다
 * primarySwatch에 들어갈 MaterialColor 만드는 방법   
 https://points.tistory.com/65
 
-*
