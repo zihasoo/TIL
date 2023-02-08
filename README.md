@@ -27,7 +27,7 @@ TIL (Today I Learned)
 
 * [백준](https://github.com/zihasoo/TIL/tree/main/%EB%B0%B1%EC%A4%80)
   * [수열과 쿼리 13 문제풀이](https://github.com/zihasoo/TIL/blob/main/%EB%B0%B1%EC%A4%80/%EC%88%98%EC%97%B4%EA%B3%BC%20%EC%BF%BC%EB%A6%AC%2013%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
-  * [이항 계수 3 문제풀이](https://github.com/zihasoo/TIL/blob/main/%EB%B0%B1%EC%A4%80/%EC%88%98%EC%97%B4%EA%B3%BC%20%EC%BF%BC%EB%A6%AC%2013%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
+  * [이항 계수 3 문제풀이](https://github.com/zihasoo/TIL/blob/main/%EB%B0%B1%EC%A4%80/%EC%9D%B4%ED%95%AD%20%EA%B3%84%EC%88%98%203%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4.md)
 
 
   
