@@ -12,3 +12,4 @@ LLVM은 재사용 가능하고 모듈화된 Compiler Infrastructure이다. 크�
 
 ![LLVM 구조](images/LLVM%20%EA%B5%AC%EC%A1%B0.webp)
 
+> 줄랭 만들면서 배웠던 것들을 언젠가는 정리하고 싶다

@@ -138,5 +138,6 @@ Stack(
 
 * 앱의 라이프사이클
 
-    <img src="app_lifecycle.png"/>
-    flutter에서는 WidgetsBindingObserver로 현재 상태를 얻을 수 있다.
+![](app_lifecycle.png)
+
+flutter에서는 WidgetsBindingObserver로 현재 상태를 얻을 수 있다.
